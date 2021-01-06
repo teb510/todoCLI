@@ -32,6 +32,9 @@ var rootCmd = &cobra.Command{
 	Use:   "todoCLI",
 	Short: "Gophersizes exersize",
 	Long:  `A simple todo cli using bolt`,
+	Run: func(cmd *cobra.Command, args []string) {
+		fmt.Println("Hello CLI")
+	},
 }
 
 // Execute adds all child commands to the root command and sets flags appropriately.
@@ -41,6 +44,8 @@ func Execute() {
 		fmt.Println(err)
 		os.Exit(1)
 	}
+
+	//fmt.Println("hello world")
 }
 
 func init() {

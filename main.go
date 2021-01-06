@@ -15,7 +15,7 @@ limitations under the License.
 */
 package main
 
-import "https://github.com/teb510/todoCLI/cmd"
+import "github.com/teb510/todoCLI/cmd"
 
 func main() {
 	cmd.Execute()
